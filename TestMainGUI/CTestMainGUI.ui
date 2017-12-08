@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CTestMainGUIClass</class>
+ <widget class="QMainWindow" name="CTestMainGUIClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>936</width>
+    <height>776</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CTestMainGUI</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,5">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item>
+       <widget class="QPushButton" name="pBStartScan">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Starte Scan</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pBStopScan">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Stoppe Scan</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="10,1">
+      <item>
+       <widget class="C3DViewWidget" name="openGLWidget3DView">
+        <property name="minimumSize">
+         <size>
+          <width>758</width>
+          <height>636</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QListWidget" name="lWLog"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>936</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDatei">
+    <property name="title">
+     <string>Datei</string>
+    </property>
+    <widget class="QMenu" name="menuLaden">
+     <property name="title">
+      <string>Laden</string>
+     </property>
+     <property name="icon">
+      <iconset resource="ctestmaingui.qrc">
+       <normaloff>:/CTestMainGUI/Resources/Icons/002.png</normaloff>:/CTestMainGUI/Resources/Icons/002.png</iconset>
+     </property>
+     <addaction name="action2D_Data_Load"/>
+     <addaction name="action3D_Data_Load"/>
+     <addaction name="actionRobot_Trajectory_Load"/>
+    </widget>
+    <widget class="QMenu" name="menuSpeichern">
+     <property name="title">
+      <string>Speichern</string>
+     </property>
+     <property name="icon">
+      <iconset resource="ctestmaingui.qrc">
+       <normaloff>:/CTestMainGUI/Resources/Icons/001.png</normaloff>:/CTestMainGUI/Resources/Icons/001.png</iconset>
+     </property>
+     <addaction name="action2D_Data_Save"/>
+     <addaction name="action3D_Data_Save"/>
+     <addaction name="actionRobot_Trajectory_Save"/>
+     <addaction name="actionFanuc_Prog_Save"/>
+     <addaction name="actionKuka_Prog_Save"/>
+    </widget>
+    <addaction name="menuLaden"/>
+    <addaction name="menuSpeichern"/>
+    <addaction name="actionSchliessen"/>
+   </widget>
+   <widget class="QMenu" name="menuEinstellungen">
+    <property name="title">
+     <string>Einstellungen</string>
+    </property>
+    <addaction name="actionScannerSetup"/>
+    <addaction name="actionConveyorSetup"/>
+   </widget>
+   <addaction name="menuDatei"/>
+   <addaction name="menuEinstellungen"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionSchliessen">
+   <property name="icon">
+    <iconset resource="ctestmaingui.qrc">
+     <normaloff>:/CTestMainGUI/Resources/Icons/exit.ico</normaloff>:/CTestMainGUI/Resources/Icons/exit.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Schliessen</string>
+   </property>
+  </action>
+  <action name="action2D_Data_Load">
+   <property name="icon">
+    <iconset resource="ctestmaingui.qrc">
+     <normaloff>:/CTestMainGUI/Resources/Icons/punktwolke.png</normaloff>:/CTestMainGUI/Resources/Icons/punktwolke.png</iconset>
+   </property>
+   <property name="text">
+    <string>2D-Daten</string>
+   </property>
+  </action>
+  <action name="action3D_Data_Load">
+   <property name="icon">
+    <iconset resource="ctestmaingui.qrc">
+     <normaloff>:/CTestMainGUI/Resources/Icons/punktwolke.png</normaloff>:/CTestMainGUI/Resources/Icons/punktwolke.png</iconset>
+   </property>
+   <property name="text">
+    <string>3D-Daten</string>
+   </property>
+  </action>
+  <action name="actionRobot_Trajectory_Save">
+   <property name="icon">
+    <iconset resource="ctestmaingui.qrc">
+     <normaloff>:/CTestMainGUI/Resources/Icons/App-katomic-atom.ico</normaloff>:/CTestMainGUI/Resources/Icons/App-katomic-atom.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Roboterbahn</string>
+   </property>
+  </action>
+  <action name="actionKuka_Prog_Save">
+   <property name="icon">
+    <iconset resource="ctestmaingui.qrc">
+     <normaloff>:/CTestMainGUI/Resources/Icons/App-katomic-atom.ico</normaloff>:/CTestMainGUI/Resources/Icons/App-katomic-atom.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Kuka-Programm</string>
+   </property>
+  </action>
+  <action name="actionFanuc_Prog_Save">
+   <property name="icon">
+    <iconset resource="ctestmaingui.qrc">
+     <normaloff>:/CTestMainGUI/Resources/Icons/App-katomic-atom.ico</normaloff>:/CTestMainGUI/Resources/Icons/App-katomic-atom.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Fanuc-Programm</string>
+   </property>
+  </action>
+  <action name="actionRobot_Trajectory_Load">
+   <property name="icon">
+    <iconset resource="ctestmaingui.qrc">
+     <normaloff>:/CTestMainGUI/Resources/Icons/App-katomic-atom.ico</normaloff>:/CTestMainGUI/Resources/Icons/App-katomic-atom.ico</iconset>
+   </property>
+   <property name="text">
+    <string>Roboterbahn</string>
+   </property>
+  </action>
+  <action name="action2D_Data_Save">
+   <property name="icon">
+    <iconset resource="ctestmaingui.qrc">
+     <normaloff>:/CTestMainGUI/Resources/Icons/punktwolke.png</normaloff>:/CTestMainGUI/Resources/Icons/punktwolke.png</iconset>
+   </property>
+   <property name="text">
+    <string>2D-Daten</string>
+   </property>
+  </action>
+  <action name="action3D_Data_Save">
+   <property name="icon">
+    <iconset resource="ctestmaingui.qrc">
+     <normaloff>:/CTestMainGUI/Resources/Icons/punktwolke.png</normaloff>:/CTestMainGUI/Resources/Icons/punktwolke.png</iconset>
+   </property>
+   <property name="text">
+    <string>3D-Daten</string>
+   </property>
+  </action>
+  <action name="actionScannerSetup">
+   <property name="icon">
+    <iconset resource="ctestmaingui.qrc">
+     <normaloff>:/CTestMainGUI/Resources/Icons/3d scanning area.png</normaloff>:/CTestMainGUI/Resources/Icons/3d scanning area.png</iconset>
+   </property>
+   <property name="text">
+    <string>Scanner</string>
+   </property>
+  </action>
+  <action name="actionConveyorSetup">
+   <property name="icon">
+    <iconset resource="ctestmaingui.qrc">
+     <normaloff>:/CTestMainGUI/Resources/Icons/353.png</normaloff>:/CTestMainGUI/Resources/Icons/353.png</iconset>
+   </property>
+   <property name="text">
+    <string>Förderer</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>C3DViewWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>c3dviewwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="ctestmaingui.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pBStartScan</sender>
+   <signal>clicked()</signal>
+   <receiver>CTestMainGUIClass</receiver>
+   <slot>slStartScan()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>84</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>467</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pBStopScan</sender>
+   <signal>clicked()</signal>
+   <receiver>CTestMainGUIClass</receiver>
+   <slot>slStopScan()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>84</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>467</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionSchliessen</sender>
+   <signal>triggered()</signal>
+   <receiver>CTestMainGUIClass</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>467</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action3D_Data_Load</sender>
+   <signal>triggered()</signal>
+   <receiver>CTestMainGUIClass</receiver>
+   <slot>slLoadPointCloud()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>467</x>
+     <y>387</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slStartScan()</slot>
+  <slot>slStopScan()</slot>
+  <slot>slLoadPointCloud()</slot>
+ </slots>
+</ui>

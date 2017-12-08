@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>C3DViewWidget</class>
+ <widget class="QOpenGLWidget" name="C3DViewWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>734</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>C3DViewWidget</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pBSetzeAnsicht">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Setze Ansicht</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pBAbrufenAnsicht">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Abrufen Ansicht</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pBStandardAnsicht">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Standardansicht</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pBMeasureDistance">
+       <property name="text">
+        <string>Abstand</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pBAbrufenAnsicht</sender>
+   <signal>clicked()</signal>
+   <receiver>C3DViewWidget</receiver>
+   <slot>slResetToUserView()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>419</x>
+     <y>603</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>366</x>
+     <y>312</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pBSetzeAnsicht</sender>
+   <signal>clicked()</signal>
+   <receiver>C3DViewWidget</receiver>
+   <slot>slMemorizeUserView()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>313</x>
+     <y>603</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>366</x>
+     <y>312</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pBStandardAnsicht</sender>
+   <signal>clicked()</signal>
+   <receiver>C3DViewWidget</receiver>
+   <slot>slResetToDefaultView()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>525</x>
+     <y>603</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>366</x>
+     <y>312</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pBMeasureDistance</sender>
+   <signal>clicked()</signal>
+   <receiver>C3DViewWidget</receiver>
+   <slot>slMeasureDistance()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>579</x>
+     <y>603</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>366</x>
+     <y>312</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slMemorizeUserView()</slot>
+  <slot>slResetToUserView()</slot>
+  <slot>slResetToDefaultView()</slot>
+  <slot>slZoomToObject()</slot>
+  <slot>slMeasureDistance()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,6 @@
+﻿  RotoScan.cpp
+c:\users\elbardan\desktop\thüma-neu\trunk\laserscannerdll_leuze_rsl400\laserscannerdll_leuze_rsl400\rotoscan.cpp(236): warning C4100: "bInterpoleateTimeStamps": Unreferenzierter formaler Parameter
+  LaserscannerDLL_Leuze_RSL400.vcxproj -> C:\Users\elbardan\Desktop\Thüma-neu\trunk\LaserscannerDLL_Leuze_RSL400\x64\Debug\RotoScan_LeuzeRSL400_d.dll
+  LaserscannerDLL_Leuze_RSL400.vcxproj -> C:\Users\elbardan\Desktop\Thüma-neu\trunk\LaserscannerDLL_Leuze_RSL400\x64\Debug\RotoScan_LeuzeRSL400_d.pdb (Partial PDB)
+          1 Datei(en) kopiert.
+          1 Datei(en) kopiert.

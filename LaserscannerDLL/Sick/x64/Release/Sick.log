@@ -1,0 +1,12 @@
+﻿  math_na.cpp
+  Thread.cpp
+  TimeStamp.cpp
+  RotoScan.cpp
+  SickScan.cpp
+  Sick_Convert.cpp
+     Bibliothek "C:\Users\elbardan\Desktop\Thuema\trunk\LaserscannerDLL\x64\Release\RotoScan_Sick.lib" und Objekt "C:\Users\elbardan\Desktop\Thuema\trunk\LaserscannerDLL\x64\Release\RotoScan_Sick.exp" werden erstellt.
+  Code wird generiert.
+  All 507 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Codegenerierung ist abgeschlossen.
+  Sick.vcxproj -> C:\Users\elbardan\Desktop\Thuema\trunk\LaserscannerDLL\x64\Release\RotoScan_Sick.dll
+  Sick.vcxproj -> C:\Users\elbardan\Desktop\Thuema\trunk\LaserscannerDLL\x64\Release\RotoScan_Sick.pdb (Full PDB)

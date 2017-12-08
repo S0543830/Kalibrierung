@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Thuema>
+	<Sensoren>
+		<Scanner>
+			<Anzahl>3</Anzahl>
+			<Scanner_0>
+				<ScannerID>0</ScannerID>
+				<DLL_Name>RotoScan_Sick.dll</DLL_Name>
+				<IP>192.168.0.2</IP>
+				<Port>2111</Port>
+			</Scanner_0>
+			<Scanner_1>
+				<ScannerID>1</ScannerID>
+				<DLL_Name>RotoScan_Sick.dll</DLL_Name>
+				<IP>192.168.0.4</IP>
+				<Port>2111</Port>
+			</Scanner_1>
+			<Scanner_2>
+				<ScannerID>2</ScannerID>
+				<DLL_Name>LaserscannerDLL_PepFu_R2000.dll</DLL_Name>
+				<IP>192.168.0.22</IP>
+				<Port>80</Port>
+			</Scanner_2>
+		</Scanner>
+		<Encoder>
+			<Val>500</Val>
+			<COM>COM3</COM>
+			<Baud>9600</Baud>
+			<Parity>N</Parity>
+			<Data>8</Data>
+			<Stop>1</Stop>
+			<DLL_Name>Encoder_GSPD05_DLL.dll</DLL_Name>
+		</Encoder>
+	</Sensoren>
+</Thuema>

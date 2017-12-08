@@ -1,0 +1,4 @@
+﻿  Test.cpp
+c:\users\elbardan\desktop\thüma-neu\trunk\laserscannerdll_pepfu_r2000\test\test.cpp(13): warning C4101: "iHandle": Unreferenzierte lokale Variable
+  Test.vcxproj -> C:\Users\elbardan\Desktop\Thüma-neu\trunk\LaserscannerDLL_PepFu_R2000\x64\Debug\Test.exe
+  Test.vcxproj -> C:\Users\elbardan\Desktop\Thüma-neu\trunk\LaserscannerDLL_PepFu_R2000\x64\Debug\Test.pdb (Full PDB)

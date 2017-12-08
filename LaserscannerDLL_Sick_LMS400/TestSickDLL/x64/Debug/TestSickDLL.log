@@ -1,0 +1,3 @@
+﻿  AssemblyInfo.obj : /DEBUG:FASTLINK wird nicht unterstützt, wenn verwalteter Code vorhanden ist; Link wird mit /DEBUG:FULL neu gestartet
+  TestSickDLL.vcxproj -> C:\Users\elbardan\Desktop\Thüma-neu\trunk\LaserscannerDLL_Sick_LMS400\x64\Debug\TestSickDLL.exe
+  TestSickDLL.vcxproj -> C:\Users\elbardan\Desktop\Thüma-neu\trunk\LaserscannerDLL_Sick_LMS400\x64\Debug\TestSickDLL.pdb (Partial PDB)

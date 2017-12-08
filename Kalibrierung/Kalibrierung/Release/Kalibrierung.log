@@ -1,0 +1,23 @@
+﻿  2DFilter.cpp
+..\..\.include\2DFilter.cpp(167): warning C4018: "<=": Konflikt zwischen "signed" und "unsigned"
+..\..\.include\2DFilter.cpp(195): warning C4018: "<=": Konflikt zwischen "signed" und "unsigned"
+..\..\.include\2DFilter.cpp(218): warning C4018: "<=": Konflikt zwischen "signed" und "unsigned"
+..\..\.include\2DFilter.cpp(317): warning C4018: "<=": Konflikt zwischen "signed" und "unsigned"
+..\..\.include\2DFilter.cpp(351): warning C4018: "<=": Konflikt zwischen "signed" und "unsigned"
+  DebugOutput.cpp
+  stdafx.cpp
+  Datenrecorder.cpp
+c:\users\elbardan\desktop\thüma-neu\trunk\datenrecorder\CScanner.h(3): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "RotoScan.h": No such file or directory
+  EncoderGSP.cpp
+..\..\Encoder_GSPD05_DLL\EncoderGSP.cpp(10): error C2491: "init": Definition von Funktion für dllimport nicht zulässig
+..\..\Encoder_GSPD05_DLL\EncoderGSP.cpp(29): error C2491: "startMovement": Definition von Funktion für dllimport nicht zulässig
+..\..\Encoder_GSPD05_DLL\EncoderGSP.cpp(33): error C2491: "stopMovement": Definition von Funktion für dllimport nicht zulässig
+..\..\Encoder_GSPD05_DLL\EncoderGSP.cpp(37): error C2491: "moveToPos": Definition von Funktion für dllimport nicht zulässig
+..\..\Encoder_GSPD05_DLL\EncoderGSP.cpp(41): error C2491: "setVel": Definition von Funktion für dllimport nicht zulässig
+..\..\Encoder_GSPD05_DLL\EncoderGSP.cpp(45): error C2491: "setAcc": Definition von Funktion für dllimport nicht zulässig
+..\..\Encoder_GSPD05_DLL\EncoderGSP.cpp(49): error C2491: "getPos": Definition von Funktion für dllimport nicht zulässig
+..\..\Encoder_GSPD05_DLL\EncoderGSP.cpp(57): error C2491: "close": Definition von Funktion für dllimport nicht zulässig
+  CKalibrierung.cpp
+c:\users\elbardan\desktop\thüma-neu\trunk\kalibrierung\kalibrierung\CKalibrierung.h(3): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "DataTypes.h": No such file or directory
+  main.cpp
+c:\users\elbardan\desktop\thüma-neu\trunk\datenrecorder\CScanner.h(3): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "RotoScan.h": No such file or directory

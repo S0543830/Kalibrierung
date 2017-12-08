@@ -1,0 +1,2 @@
+﻿  main.cpp
+LINK : fatal error LNK1104: Datei "3DLibCpp_x64_d.lib" kann nicht geöffnet werden.

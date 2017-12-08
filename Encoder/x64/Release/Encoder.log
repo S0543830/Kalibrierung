@@ -1,0 +1,8 @@
+﻿  stdafx.cpp
+  CEncoderAmtec.cpp
+  dllmain.cpp
+  Encoder.cpp
+     Bibliothek "C:\Users\elbardan\Desktop\Thuema\trunk\Encoder\x64\Release\Encoder.lib" und Objekt "C:\Users\elbardan\Desktop\Thuema\trunk\Encoder\x64\Release\Encoder.exp" werden erstellt.
+  Code wird generiert.
+  Codegenerierung ist abgeschlossen.
+  Encoder.vcxproj -> C:\Users\elbardan\Desktop\Thuema\trunk\Encoder\x64\Release\Encoder.dll

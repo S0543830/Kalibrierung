@@ -1,0 +1,15 @@
+﻿  main.cpp
+main.cpp(104): warning C4100: "iZahl": Unreferenzierter formaler Parameter
+main.cpp(130): warning C4129: "K": nicht erkannte Folge von Escapesequenz
+main.cpp(123): warning C4100: "iZahl": Unreferenzierter formaler Parameter
+main.cpp(247): warning C4189: "z": Lokale Variable ist initialisiert aber nicht referenziert
+main.cpp(246): warning C4189: "y": Lokale Variable ist initialisiert aber nicht referenziert
+main.cpp(245): warning C4189: "x": Lokale Variable ist initialisiert aber nicht referenziert
+  Code wird generiert.
+  0 of 1218 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    3 functions had inline decision re-evaluated but remain unchanged
+  Codegenerierung ist abgeschlossen.
+  Datenrecorder.vcxproj -> C:\Users\elbardan\Desktop\Thüma-neu\trunk\Datenrecorder\x64\Release\Datenrecorder.exe
+  Datenrecorder.vcxproj -> C:\Users\elbardan\Desktop\Thüma-neu\trunk\Datenrecorder\x64\Release\Datenrecorder.pdb (Full PDB)
+          1 Datei(en) kopiert.

@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{09F96120-883E-402D-B2C3-959A2621FD93}</ProjectGuid>
+    <RootNamespace>LaserscannerDLL_Sick_LMS400</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>RotoScan_SickLMS400_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>RotoScan_SickLMS400</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>LaScanLib_SickLMS400_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>LaScanLib_SickLMS400</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\.include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>ROTOSCAN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>if NOT exist $(SolutionDir)\..\.bin\x64\$(ConfigurationName) mkdir $(SolutionDir)\..\.bin\x64\$(ConfigurationName) 
+copy $(TargetPath) $(SolutionDir)\..\.bin\x64\$(ConfigurationName)\$(TargetFileName)
+
+if NOT exist $(SolutionDir)\..\.lib\x64\$(ConfigurationName) mkdir $(SolutionDir)\..\.lib\x64\$(ConfigurationName) 
+copy $(TargetPath) $(SolutionDir)\..\.lib\x64\$(ConfigurationName)\$(TargetName).lib</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\.include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>LASCANLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>if NOT exist $(SolutionDir)\..\.bin\x64\$(ConfigurationName) mkdir $(SolutionDir)\..\.bin\x64\$(ConfigurationName) 
+copy $(TargetPath) $(SolutionDir)\..\.bin\x64\$(ConfigurationName)\$(TargetFileName)
+
+if NOT exist $(SolutionDir)\..\.bin\x64\$(ConfigurationName) mkdir $(SolutionDir)\..\.bin\x64\$(ConfigurationName) 
+copy $(TargetPath) $(SolutionDir)\..\Kalibrierung\x64\Debug
+
+if NOT exist $(SolutionDir)\..\.lib\x64\$(ConfigurationName) mkdir $(SolutionDir)\..\.lib\x64\$(ConfigurationName) 
+copy $(TargetPath) $(SolutionDir)\..\.lib\x64\$(ConfigurationName)\$(TargetName).lib</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>ROTOSCAN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\.include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>if NOT exist $(SolutionDir)\..\.bin\x64\$(ConfigurationName) mkdir $(SolutionDir)\..\.bin\x64\$(ConfigurationName) 
+copy $(TargetPath) $(SolutionDir)\..\.bin\x64\$(ConfigurationName)\$(TargetFileName)
+
+if NOT exist $(SolutionDir)\..\.lib\x64\$(ConfigurationName) mkdir $(SolutionDir)\..\.lib\x64\$(ConfigurationName) 
+copy $(TargetPath) $(SolutionDir)\..\.lib\x64\$(ConfigurationName)\$(TargetName).lib</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>LASCANLIB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\.include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>if NOT exist $(SolutionDir)\..\.bin\x64\$(ConfigurationName) mkdir $(SolutionDir)\..\.bin\x64\$(ConfigurationName) 
+copy $(TargetPath) $(SolutionDir)\..\.bin\x64\$(ConfigurationName)\$(TargetFileName)
+
+if NOT exist $(SolutionDir)\..\.bin\x64\$(ConfigurationName) mkdir $(SolutionDir)\..\.bin\x64\$(ConfigurationName) 
+copy $(TargetPath) $(SolutionDir)\..\Kalibrierung\x64\Release
+
+if NOT exist $(SolutionDir)\..\.lib\x64\$(ConfigurationName) mkdir $(SolutionDir)\..\.lib\x64\$(ConfigurationName) 
+copy $(TargetPath) $(SolutionDir)\..\.lib\x64\$(ConfigurationName)\$(TargetName).lib</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\.include\math_na.cpp" />
+    <ClCompile Include="..\..\.include\Thread.cpp" />
+    <ClCompile Include="..\..\.include\TimeStamp.cpp" />
+    <ClCompile Include="LaScanLib.cpp" />
+    <ClCompile Include="SickScan.cpp" />
+    <ClCompile Include="Sick_Convert.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\.include\DataTypes.h" />
+    <ClInclude Include="..\..\.include\LaScanLib.h" />
+    <ClInclude Include="..\..\.include\math_na.h" />
+    <ClInclude Include="..\..\.include\Thread.h" />
+    <ClInclude Include="..\..\.include\TimeStamp.h" />
+    <ClInclude Include="SickScan.h" />
+    <ClInclude Include="Sick_Convert.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

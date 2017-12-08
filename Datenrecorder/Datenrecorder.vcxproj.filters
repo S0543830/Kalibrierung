@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\.include\2DFilter.cpp" />
+    <ClCompile Include="..\.include\math_na.cpp" />
+    <ClCompile Include="..\.include\Thread.cpp" />
+    <ClCompile Include="..\.include\TimeStamp.cpp" />
+    <ClCompile Include="..\.include\XMLParameter.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\.include\CEncoder.cpp" />
+    <ClCompile Include="..\.include\CScanner.cpp" />
+    <ClCompile Include="..\.include\Datenrecorder.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\.include\2DFilter.h" />
+    <ClInclude Include="..\.include\DataTypes.h" />
+    <ClInclude Include="..\.include\math_na.h" />
+    <ClInclude Include="..\.include\RotoScan.h" />
+    <ClInclude Include="..\.include\Thread.h" />
+    <ClInclude Include="..\.include\TimeStamp.h" />
+    <ClInclude Include="..\.include\XMLParameter.h" />
+    <ClInclude Include="..\Encoder_GSPD05_DLL\EncoderGSP.h" />
+    <ClInclude Include="..\.include\CEncoder.h" />
+    <ClInclude Include="..\.include\CScanner.h" />
+    <ClInclude Include="..\.include\Datenrecorder.h" />
+  </ItemGroup>
+</Project>

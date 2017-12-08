@@ -1,0 +1,7 @@
+﻿  Test.cpp
+c:\users\elbardan\desktop\thüma-neu\trunk\laserscannerdll_pepfu_r2000\scandata.h(6): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "DataTypes.h": No such file or directory
+  ScanData.cpp
+c:\users\elbardan\desktop\thüma-neu\trunk\laserscannerdll_pepfu_r2000\scandata.h(6): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "DataTypes.h": No such file or directory
+  PaFR2000Scanner.cpp
+c:\users\elbardan\desktop\thüma-neu\trunk\laserscannerdll_pepfu_r2000\scandata.h(6): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "DataTypes.h": No such file or directory
+  Code wird generiert...

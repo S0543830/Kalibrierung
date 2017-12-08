@@ -1,0 +1,12 @@
+﻿  EncoderGSP.cpp
+c:\users\elbardan\desktop\thüma-neu\trunk\encoder_gspd05_dll\encodergsp.cpp(44): warning C4100: "dAcc": Unreferenzierter formaler Parameter
+  ComDev.cpp
+  CEncoderGSP.cpp
+c:\users\elbardan\desktop\thüma-neu\trunk\encoder_gspd05_dll\cencodergsp.cpp(442): warning C4458: Deklaration von "axis" blendet Klassenmember aus
+  c:\users\elbardan\desktop\thüma-neu\trunk\encoder_gspd05_dll\cencodergsp.h(36): note: Siehe Deklaration von "CEncoderGSP::axis"
+  Code wird generiert...
+     Bibliothek "C:\Users\elbardan\Desktop\Thüma-neu\trunk\Encoder_GSPD05_DLL\x64\Debug\Encoder_GSPD05_DLL.lib" und Objekt "C:\Users\elbardan\Desktop\Thüma-neu\trunk\Encoder_GSPD05_DLL\x64\Debug\Encoder_GSPD05_DLL.exp" werden erstellt.
+  Encoder_GSPD05_DLL.vcxproj -> C:\Users\elbardan\Desktop\Thüma-neu\trunk\Encoder_GSPD05_DLL\x64\Debug\Encoder_GSPD05_DLL.dll
+  Encoder_GSPD05_DLL.vcxproj -> C:\Users\elbardan\Desktop\Thüma-neu\trunk\Encoder_GSPD05_DLL\x64\Debug\Encoder_GSPD05_DLL.pdb (Partial PDB)
+          1 Datei(en) kopiert.
+          1 Datei(en) kopiert.

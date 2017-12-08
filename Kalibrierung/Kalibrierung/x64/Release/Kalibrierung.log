@@ -1,0 +1,13 @@
+﻿  CKalibrierung.cpp
+..\..\.include\CKalibrierung.cpp(478): warning C4267: "=": Konvertierung von "size_t" nach "int", Datenverlust möglich
+..\..\.include\CKalibrierung.cpp(489): warning C4267: "=": Konvertierung von "size_t" nach "int", Datenverlust möglich
+..\..\.include\CKalibrierung.cpp(565): warning C4101: "C": Unreferenzierte lokale Variable
+..\..\.include\CKalibrierung.cpp(1283): warning C4101: "B": Unreferenzierte lokale Variable
+..\..\.include\CKalibrierung.cpp(2094): warning C4101: "RegressionsGerade": Unreferenzierte lokale Variable
+  Code wird generiert.
+  2 of 1333 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    21 functions had inline decision re-evaluated but remain unchanged
+  Codegenerierung ist abgeschlossen.
+  Kalibrierung.vcxproj -> C:\Users\elbardan\Desktop\Thüma-neu\trunk\Kalibrierung\x64\Release\Kalibrierung.exe
+  Kalibrierung.vcxproj -> C:\Users\elbardan\Desktop\Thüma-neu\trunk\Kalibrierung\x64\Release\Kalibrierung.pdb (Full PDB)

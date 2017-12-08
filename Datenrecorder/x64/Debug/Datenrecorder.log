@@ -1,0 +1,29 @@
+﻿  main.cpp
+c:\users\elbardan\desktop\thüma-neu\trunk\datenrecorder\main.cpp(174): warning C4189: "z": Lokale Variable ist initialisiert aber nicht referenziert
+c:\users\elbardan\desktop\thüma-neu\trunk\datenrecorder\main.cpp(173): warning C4189: "y": Lokale Variable ist initialisiert aber nicht referenziert
+c:\users\elbardan\desktop\thüma-neu\trunk\datenrecorder\main.cpp(172): warning C4189: "x": Lokale Variable ist initialisiert aber nicht referenziert
+  Datenrecorder.cpp
+  CScanner.cpp
+  CKalibrierung.cpp
+c:\users\elbardan\desktop\thüma-neu\trunk\datenrecorder\ckalibrierung.cpp(73): warning C4267: "=": Konvertierung von "size_t" nach "int", Datenverlust möglich
+c:\users\elbardan\desktop\thüma-neu\trunk\datenrecorder\ckalibrierung.cpp(84): warning C4267: "=": Konvertierung von "size_t" nach "int", Datenverlust möglich
+c:\users\elbardan\desktop\thüma-neu\trunk\datenrecorder\ckalibrierung.cpp(124): warning C4101: "B": Unreferenzierte lokale Variable
+c:\users\elbardan\desktop\thüma-neu\trunk\datenrecorder\ckalibrierung.cpp(457): warning C4100: "iMaxSize": Unreferenzierter formaler Parameter
+c:\users\elbardan\desktop\thüma-neu\trunk\datenrecorder\ckalibrierung.cpp(471): warning C4101: "RegressionsGerade": Unreferenzierte lokale Variable
+  CEncoder.cpp
+  XMLParameter.cpp
+  TimeStamp.cpp
+  Thread.cpp
+c:\users\elbardan\desktop\thüma-neu\trunk\.include\thread.cpp(30): warning C4100: "clThread": Unreferenzierter formaler Parameter
+c:\users\elbardan\desktop\thüma-neu\trunk\.include\thread.cpp(46): warning C4100: "clThread": Unreferenzierter formaler Parameter
+  math_na.cpp
+  2DFilter.cpp
+  Code wird generiert...
+c:\users\elbardan\desktop\thüma-neu\trunk\.include\2dfilter.cpp(160): warning C4701: Die möglicherweise nicht initialisierte lokale Variable "A" wurde verwendet.
+c:\users\elbardan\desktop\thüma-neu\trunk\.include\2dfilter.cpp(310): warning C4701: Die möglicherweise nicht initialisierte lokale Variable "A" wurde verwendet.
+c:\users\elbardan\desktop\thüma-neu\trunk\datenrecorder\ckalibrierung.cpp(408): warning C4715: "CKalibrierung::ermittleRegressionsGeraden": Nicht alle Steuerelementpfade geben einen Wert zurück.
+c:\users\elbardan\desktop\thüma-neu\trunk\datenrecorder\ckalibrierung.cpp(257): warning C4701: Die möglicherweise nicht initialisierte lokale Variable "tmpGerade" wurde verwendet.
+c:\users\elbardan\desktop\thüma-neu\trunk\datenrecorder\ckalibrierung.cpp(483): warning C4701: Die möglicherweise nicht initialisierte lokale Variable "tmpGerade" wurde verwendet.
+  Datenrecorder.vcxproj -> C:\Users\elbardan\Desktop\Thüma-neu\trunk\Datenrecorder\x64\Debug\Datenrecorder.exe
+  Datenrecorder.vcxproj -> C:\Users\elbardan\Desktop\Thüma-neu\trunk\Datenrecorder\x64\Debug\Datenrecorder.pdb (Partial PDB)
+          1 Datei(en) kopiert.

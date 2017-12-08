@@ -1,0 +1,15 @@
+﻿  ScanData.cpp
+  LaScanLib.cpp
+  PaFR2000Scanner.cpp
+c:\users\elbardan\desktop\thüma-neu\trunk\laserscannerdll_pepfu_r2000\pafr2000scanner.cpp(751): warning C4309: "Argument": Verkürzung eines konstanten Wertes
+  DebugOutput.cpp
+  Client.cpp
+  TimeStamp.cpp
+  Thread.cpp
+  Code wird generiert...
+     Bibliothek "C:\Users\elbardan\Desktop\Thüma-neu\trunk\LaserscannerDLL_PepFu_R2000\x64\Debug\LaserscannerDLL_PepFu_R2000.lib" und Objekt "C:\Users\elbardan\Desktop\Thüma-neu\trunk\LaserscannerDLL_PepFu_R2000\x64\Debug\LaserscannerDLL_PepFu_R2000.exp" werden erstellt.
+  LaserscannerDLL_PepFu_R2000.vcxproj -> C:\Users\elbardan\Desktop\Thüma-neu\trunk\LaserscannerDLL_PepFu_R2000\x64\Debug\LaserscannerDLL_PepFu_R2000.dll
+  LaserscannerDLL_PepFu_R2000.vcxproj -> C:\Users\elbardan\Desktop\Thüma-neu\trunk\LaserscannerDLL_PepFu_R2000\x64\Debug\LaserscannerDLL_PepFu_R2000.pdb (Partial PDB)
+          1 Datei(en) kopiert.
+          1 Datei(en) kopiert.
+          1 Datei(en) kopiert.

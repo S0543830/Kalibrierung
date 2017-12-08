@@ -1,0 +1,16 @@
+﻿  Thread.cpp
+  TimeStamp.cpp
+  Client.cpp
+  DebugOutput.cpp
+  PaFR2000Scanner.cpp
+PaFR2000Scanner.cpp(645): warning C4309: "Argument": Verkürzung eines konstanten Wertes
+  LaScanLib.cpp
+  ScanData.cpp
+     Bibliothek "C:\Users\elbardan\Desktop\Thüma-neu\trunk\LaserscannerDLL_PepFu_R2000\x64\Release\LaserscannerDLL_PepFu_R2000.lib" und Objekt "C:\Users\elbardan\Desktop\Thüma-neu\trunk\LaserscannerDLL_PepFu_R2000\x64\Release\LaserscannerDLL_PepFu_R2000.exp" werden erstellt.
+  Code wird generiert.
+  All 891 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Codegenerierung ist abgeschlossen.
+  LaserscannerDLL_PepFu_R2000.vcxproj -> C:\Users\elbardan\Desktop\Thüma-neu\trunk\LaserscannerDLL_PepFu_R2000\x64\Release\LaserscannerDLL_PepFu_R2000.dll
+  LaserscannerDLL_PepFu_R2000.vcxproj -> C:\Users\elbardan\Desktop\Thüma-neu\trunk\LaserscannerDLL_PepFu_R2000\x64\Release\LaserscannerDLL_PepFu_R2000.pdb (Full PDB)
+          1 Datei(en) kopiert.
+          1 Datei(en) kopiert.

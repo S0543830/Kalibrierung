@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="CTestMainGUI">
+    <file>Resources/Icons/App-katomic-atom.ico</file>
+    <file>Resources/Icons/001.png</file>
+    <file>Resources/Icons/002.png</file>
+    <file>Resources/Icons/3d scanning area.png</file>
+    <file>Resources/Icons/353.png</file>
+    <file>Resources/Icons/exit.ico</file>
+    <file>Resources/Icons/Objects.png</file>
+    <file>Resources/Icons/punktwolke.png</file>
+  </qresource>
+</RCC>
